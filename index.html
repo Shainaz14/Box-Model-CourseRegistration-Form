@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Registration Form - TAP Academy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2 class="form-title">Course Registration Form</h2>
+      <form action="asset-6/index1.html">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <table>
+            <tr>
+              <td><label>First Name</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="FN"
+                  required
+                  placeholder="Ex: Rohit"
+                  maxlength="10"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Surname</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="LN"
+                  required
+                  placeholder="Ex: Ravinder"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Mobile Number</label></td>
+              <td>
+                <input
+                  type="tel"
+                  name="mob"
+                  required
+                  placeholder="99870 98789"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Email-ID</label></td>
+              <td>
+                <input
+                  type="email"
+                  name="mail"
+                  required
+                  placeholder="Ex: rohit12@gmail.com"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Password</label></td>
+              <td>
+                <input
+                  type="password"
+                  name="pwd"
+                  required
+                  placeholder="min 5 characters"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Confirm Password</label></td>
+              <td>
+                <input
+                  type="password"
+                  name="cmpwd"
+                  required
+                  placeholder="min 5 characters"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Date of Birth</label></td>
+              <td><input type="date" name="dob" required /></td>
+            </tr>
+            <tr>
+              <td><label>Age</label></td>
+              <td>
+                <input type="number" name="age" placeholder="Ex: 21" required />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Gender</label></td>
+              <td>
+                <input type="radio" name="gender" value="M" /> Male
+                <input type="radio" name="gender" value="F" /> Female
+                <input type="radio" name="gender" value="C" /> Custom
+              </td>
+            </tr>
+            <tr>
+              <td><label>Select Country</label></td>
+              <td>
+                <select name="country">
+                  <option>INDIA</option>
+                  <option>JAPAN</option>
+                  <option>AUSTRALIA</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label>Upload Picture</label></td>
+              <td><input type="file" name="pic" /></td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>Course Details</legend>
+          <label>Select Course</label>
+          <select name="course">
+            <option>Java Full-Stack Development</option>
+            <option>Python Full-Stack Development</option>
+            <option>Data Science</option>
+            <option>Data Analytics</option>
+            <option>AI-ML</option>
+          </select>
+          <br /><br />
+          <label>Delivery Mode:</label>
+          <input type="checkbox" name="mode1" value="ON" /> Online
+          <input type="checkbox" name="mode2" value="OFF" /> Offline
+          <br /><br />
+          <label>Comments</label><br />
+          <textarea rows="4" cols="40"></textarea>
+        </fieldset>
+
+        <div class="form-buttons">
+          <input type="Submit" />
+        </div>
+        <div class="form-buttons">
+          <input type="reset" value="Reset" />
+          <input type="submit" value="Register Now" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
